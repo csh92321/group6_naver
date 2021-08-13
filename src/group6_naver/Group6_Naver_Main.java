@@ -3,7 +3,7 @@ package group6_naver;
 import java.util.Scanner;
 import naver_shopping_csh.Shopping;
 
-public class MainClass {
+public class Group6_Naver_Main {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);

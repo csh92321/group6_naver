@@ -1,7 +1,6 @@
 package naver_shopping_csh;
 
 import java.util.*;
-import java.util.Map.Entry;
 
 public class Shopping {
 	
