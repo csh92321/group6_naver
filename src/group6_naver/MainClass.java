@@ -1,11 +1,14 @@
 package group6_naver;
 
 import java.util.Scanner;
+import naver_shopping_csh.Shopping;
 
 public class MainClass {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
+		Shopping csh = new Shopping();
+		
 		System.out.println("--- 네이버 ---");
 		
 		while (true) {
@@ -27,6 +30,7 @@ public class MainClass {
 			case 4 :
 				break;
 			case 5 :
+				csh.display();
 				break;
 			case 6 :
 				break;
