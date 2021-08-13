@@ -1,9 +1,11 @@
-package group6_naver;
+package naver_learning_joohui;
 
 import java.util.Scanner;
 
 public class MainClass {
 	public static void main(String[] args) {
+		
+		Learning_joohui learn = new Learning_joohui();
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("--- 네이버 ---");
@@ -25,6 +27,7 @@ public class MainClass {
 			case 3 :
 				break;
 			case 4 :
+				learn.learning();
 				break;
 			case 5 :
 				break;
