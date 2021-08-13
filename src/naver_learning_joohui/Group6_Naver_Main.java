@@ -1,16 +1,27 @@
-package group6_naver;
+package naver_learning_joohui;
 
 import java.util.Scanner;
 
 import naver_blog_csy.Blog_main;
+import naver_mail_jch.Mail;
+
+import group6_naver_cafe_hjm.Cafe_;
 
 public class Group6_Naver_Main {
 	public static void main(String[] args) {
+		Cafe_ hjm = new Cafe_();
+		Learning_joohui learn = new Learning_joohui();
+		
 		
 		Blog_main blog = new Blog_main();
 		
 		Scanner input = new Scanner(System.in);
+		
+		Mail mail=new Mail();
+		
+		
 		System.out.println("--- 네이버 ---");
+		
 		
 		while (true) {
 			System.out.println("1.메일");
@@ -28,8 +39,10 @@ public class Group6_Naver_Main {
 				blog.blog_main();
 				break;
 			case 3 :
+				hjm.print();
 				break;
 			case 4 :
+				learn.learning();
 				break;
 			case 5 :
 				break;
