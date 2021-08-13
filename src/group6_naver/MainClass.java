@@ -2,10 +2,16 @@ package group6_naver;
 
 import java.util.Scanner;
 
+import naver_mail_jch.Mail;
+
 public class MainClass {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
+		
+		Mail mail=new Mail();
+		
+		
 		System.out.println("--- 네이버 ---");
 		
 		while (true) {
