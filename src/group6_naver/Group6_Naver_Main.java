@@ -2,11 +2,17 @@ package group6_naver;
 
 import java.util.Scanner;
 
-public class MainClass {
+import group6_naver_cafe_hjm.Cafe_;
+import naver_learning_joohui.Learning_joohui;
+
+public class Group6_Naver_Main {
 	public static void main(String[] args) {
-		
+		Cafe_ hjm = new Cafe_();
+		Learning_joohui learn = new Learning_joohui();
 		Scanner input = new Scanner(System.in);
+		
 		System.out.println("--- 네이버 ---");
+		
 		
 		while (true) {
 			System.out.println("1.메일");
@@ -23,8 +29,10 @@ public class MainClass {
 			case 2 :
 				break;
 			case 3 :
+				hjm.print();
 				break;
 			case 4 :
+				learn.learning();
 				break;
 			case 5 :
 				break;
