@@ -1,4 +1,4 @@
-package group6_naver;
+package naver_learning_joohui;
 
 import java.util.Scanner;
 
@@ -9,6 +9,8 @@ public class Group6_Naver_Main {
 	public static void main(String[] args) {
 		Cafe_ hjm = new Cafe_();
 		Learning_joohui learn = new Learning_joohui();
+		
+		
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("--- 네이버 ---");
