@@ -38,7 +38,7 @@ public class Mail {
 	            }
 	        }//while
 	    }//run()
-	}//class
+	}//classs
 
 
 	public class Quiz01 {
