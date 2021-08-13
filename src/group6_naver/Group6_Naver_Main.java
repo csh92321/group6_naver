@@ -2,8 +2,12 @@ package group6_naver;
 
 import java.util.Scanner;
 
-public class MainClass {
+import naver_blog_csy.Blog_main;
+
+public class Group6_Naver_Main {
 	public static void main(String[] args) {
+		
+		Blog_main blog = new Blog_main();
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("--- 네이버 ---");
@@ -21,6 +25,7 @@ public class MainClass {
 			case 1 :
 				break;
 			case 2 :
+				blog.blog_main();
 				break;
 			case 3 :
 				break;
