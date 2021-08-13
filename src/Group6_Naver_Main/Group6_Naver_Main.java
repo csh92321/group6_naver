@@ -1,6 +1,7 @@
 package Group6_Naver_Main;
 
 import java.util.Scanner;
+import naver_learning_joohui.Learning_joohui;
 
 import naver_shopping_csh.Shopping;
 
