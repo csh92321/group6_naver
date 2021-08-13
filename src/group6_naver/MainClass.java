@@ -2,9 +2,11 @@ package group6_naver;
 
 import java.util.Scanner;
 
+import group6_naver_cafe_hjm.Cafe_;
+
 public class MainClass {
 	public static void main(String[] args) {
-		
+		Cafe_ hjm = new Cafe_();
 		Scanner input = new Scanner(System.in);
 		System.out.println("--- 네이버 ---");
 		
@@ -23,9 +25,7 @@ public class MainClass {
 			case 2 :
 				break;
 			case 3 :
-				System.out.println("==== Naver Cafe ====");
-				
-				
+				hjm.print();
 				break;
 			case 4 :
 				break;
