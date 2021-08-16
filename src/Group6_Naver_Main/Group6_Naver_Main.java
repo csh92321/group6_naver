@@ -1,21 +1,28 @@
-package naver_learning_joohui;
+package Group6_Naver_Main;
 
 import java.util.Scanner;
+import naver_learning_joohui.Learning_joohui;
+
+import naver_shopping_csh.Shopping;
+
+import naver_blog_csy.Blog_main;
+import naver_mail_jch.Mail;
 
 import group6_naver_cafe_hjm.Cafe_;
-import naver_learning_joohui.Learning_joohui;
 
 public class Group6_Naver_Main {
 	public static void main(String[] args) {
-<<<<<<< HEAD:src/naver_learning_joohui/Group6_Naver_Main.java
 		Cafe_ hjm = new Cafe_();
 		Learning_joohui learn = new Learning_joohui();
-=======
 		
-		Learning_joohui learn = new Learning_joohui();
 		
->>>>>>> 9159b51d57f424f33b2492ee7a94df3e0ff0b2ad:src/naver_learning_joohui/MainClass.java
+		Blog_main blog = new Blog_main();
+		
 		Scanner input = new Scanner(System.in);
+		Shopping csh = new Shopping();
+		
+		Mail mail=new Mail();
+		
 		
 		System.out.println("--- 네이버 ---");
 		
@@ -33,6 +40,7 @@ public class Group6_Naver_Main {
 			case 1 :
 				break;
 			case 2 :
+				blog.blog_main();
 				break;
 			case 3 :
 				hjm.print();
@@ -41,6 +49,7 @@ public class Group6_Naver_Main {
 				learn.learning();
 				break;
 			case 5 :
+				csh.display();
 				break;
 			case 6 :
 				break;
