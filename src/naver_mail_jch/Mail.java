@@ -1,53 +1,41 @@
 package naver_mail_jch;
 
-import java.awt.Desktop;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Mail {
 	
-	Scanner sc=new Scanner(System.in);
+	//받는 사람 이메일 작성
+	//메일 제목 작성
+	//메일 내용 작성
+	//메일 보내기
+
+	Scanner scanner=new Scanner(System.in);
 	
-	class MailWrite {
-	    static String[] mail = { "메일" }; //메일이라 입력하면 네이버메일로 이동
-	    static String[] site = { "https://mail.naver.com/" };
-	    Scanner sc;
-	
-	
-	    void mail(String word) {
-	        for (int i=0; i<mail.length; i++) {
-	            if (mail[i].equals(word)) {
-	                return;
-	            }
-	        }
-	    }
-	    
-	    void program() {	
-	        System.out.println("네이버 메일");
-	        
-	        while(true) {
-	            System.out.print("'메일'을 입력하세요: ");
-	            String mail = sc.next();
-	            
-	            if (mail.equals("메일 쓰기")) {
-	                System.out.println("https://mail.naver.com/#%7B%22fClass%22%3A%22write%22%2C%22oParameter%22%3A%7B%22orderType%22%3A%22new%22%2C%22sMailList%22%3A%22%22%7D%7D");
-	                break;
-	            
-	            }
-	        }//while
-	    }//run()
-	}//classs
-
-
-	public class Quiz01 {
-
-		public static void main(String[] args) {
-
-			  Mail mail = new Mail();
-		        
-
-		}
+	public void email() {
+		
+		
+		//받는 사람 이메일 작성
+		System.out.println("받는 사람 이메일 :");
+		String email = scanner.nextLine();
+		
 	}
+	
+	public void write() {
+		//메일 제목 작성
+		System.out.println("제목 입력 : ");
+		String title = scanner.nextLine();
+		
+		//메일 내용 작성
+		System.out.println("내용 입력 : ");
+		String content = scanner.nextLine();
+		System.out.println(content);
 	}
+	
+	public void send() {
+		
+		System.out.println("메일을 보냈습니다.");
+		System.out.println("-------------");
+
+	}
+}
