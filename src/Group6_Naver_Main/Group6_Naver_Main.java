@@ -21,6 +21,7 @@ public class Group6_Naver_Main {
 		Scanner input = new Scanner(System.in);
 		Shopping csh = new Shopping();
 		
+		
 		Mail mail=new Mail();
 		
 		
