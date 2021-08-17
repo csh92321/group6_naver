@@ -31,7 +31,7 @@ public class Blog {
 	public void write() {
 		System.out.println("제목 입력 : ");
 		String title = sc.nextLine();
-		//sc.nextLine();
+		title = sc.nextLine();
 		System.out.println("내용 입력 : ");
 		String content = sc.nextLine();
 		post.put(title, content);
@@ -48,10 +48,13 @@ public class Blog {
 		if (choice==1) {
 			System.out.print("제목 입력 : ");
 			String title = sc.nextLine();
+			title = sc.nextLine();
 			if (post.containsKey(title)) {
 				System.out.print("수정 제목 입력 : ");
 				String newTitle = sc.nextLine();
-				//key값 변경 코드 필요	
+				String content = (String) post.get(title);
+				post.remove(title);
+				post.put(newTitle, content);
 				System.out.println("제목이 수정되었습니다");
 			} else {
 				System.out.println(title+"이 제목인 글이 존재하지 않습니다.");
@@ -59,6 +62,7 @@ public class Blog {
 		} else if (choice == 2) {
 			System.out.print("제목 입력 : ");
 			String title = sc.nextLine();
+			title = sc.nextLine();
 			if (post.containsKey(title)) {
 				System.out.print("수정 내용 입력 : ");
 				String content = sc.nextLine();
@@ -75,6 +79,7 @@ public class Blog {
 	public void delete() {
 		System.out.print("삭제할 제목 입력 : ");
 		String title = sc.nextLine();
+		title=sc.nextLine();
 		if (post.containsKey(title)) {
 			post.remove(title);
 		} else {

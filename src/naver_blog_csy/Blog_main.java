@@ -42,8 +42,9 @@ public class Blog_main {
 				blog.viewList();
 				break;
 			case 6 :
-				break;
+				return;
 			}
+			
 		}
 	}
 }
