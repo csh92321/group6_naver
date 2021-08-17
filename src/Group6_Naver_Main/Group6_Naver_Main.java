@@ -1,6 +1,9 @@
-package naver_learning_joohui;
+package Group6_Naver_Main;
 
 import java.util.Scanner;
+import naver_learning_joohui.Learning_joohui;
+
+import naver_shopping_csh.Shopping;
 
 import naver_blog_csy.Blog_main;
 import naver_mail_jch.Mail;
@@ -16,6 +19,8 @@ public class Group6_Naver_Main {
 		Blog_main blog = new Blog_main();
 		
 		Scanner input = new Scanner(System.in);
+		Shopping csh = new Shopping();
+		
 		
 		Mail mail=new Mail();
 		
@@ -45,6 +50,7 @@ public class Group6_Naver_Main {
 				learn.learning();
 				break;
 			case 5 :
+				csh.display();
 				break;
 			case 6 :
 				break;
