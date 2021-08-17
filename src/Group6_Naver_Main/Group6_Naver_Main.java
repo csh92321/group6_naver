@@ -49,7 +49,7 @@ public class Group6_Naver_Main {
 				csh.display();
 				break;
 			case 6 :
-				break;
+				return;
 			}
 	}
 	}
