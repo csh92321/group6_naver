@@ -12,18 +12,14 @@ import group6_naver_cafe_hjm.Cafe_;
 
 public class Group6_Naver_Main {
 	public static void main(String[] args) {
+		
 		Cafe_ hjm = new Cafe_();
 		Learning_joohui learn = new Learning_joohui();
-		
-		
 		Blog_main blog = new Blog_main();
-		
-		Scanner input = new Scanner(System.in);
 		Shopping csh = new Shopping();
-		
-		
 		Mail mail=new Mail();
 		
+		Scanner input = new Scanner(System.in);
 		
 		System.out.println("--- 네이버 ---");
 		
