@@ -1,7 +1,8 @@
 package naver_blog_csy;
 
+import java.util.Scanner;
 
-public class Blog_main {
+public class Blog_main extends Login_blog {
 
 	//	 # 구현 기능
 //	  - 글 쓰기 ( 제목 지정 - 내용 작성)

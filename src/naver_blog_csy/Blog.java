@@ -21,6 +21,7 @@ public class Blog {
 	Scanner sc = new Scanner(System.in);
 	
 	HashMap post = new HashMap();
+	private String id=null, pass=null;
 
 	public int input() {
 		System.out.print(">>> ");
@@ -110,6 +111,7 @@ public class Blog {
 			}
 		}
 	}
-	
-	
 }
+
+
+	

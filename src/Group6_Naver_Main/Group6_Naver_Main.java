@@ -1,21 +1,19 @@
 package Group6_Naver_Main;
 
 import java.util.Scanner;
-import naver_learning_joohui.Learning_joohui;
-
-import naver_shopping_csh.Shopping;
-
-import naver_blog_csy.Blog_main;
-import naver_mail_jch.Mail;
 
 import group6_naver_cafe_hjm.Cafe_;
+import naver_blog_csy.Login_blog;
+import naver_learning_joohui.Learning_joohui;
+import naver_mail_jch.Mail;
+import naver_shopping_csh.Shopping;
 
 public class Group6_Naver_Main {
 	public static void main(String[] args) {
 		
 		Cafe_ hjm = new Cafe_();
 		Learning_joohui learn = new Learning_joohui();
-		Blog_main blog = new Blog_main();
+		Login_blog blog = new Login_blog();
 		Shopping csh = new Shopping();
 		Mail mail=new Mail();
 		
@@ -37,7 +35,7 @@ public class Group6_Naver_Main {
 			case 1 :
 				break;
 			case 2 :
-				blog.blog_main();
+				blog.login_blog_display();
 				break;
 			case 3 :
 				hjm.print();
