@@ -2,7 +2,15 @@ package naver_shopping_csh;
 
 import java.util.*;
 
-public class Shopping {
+class cnt {
+	int cnt = 0;
+	public void cnt() {
+		cnt++;
+		System.out.println("쇼핑 횟수 : "+cnt);
+	}
+}
+
+public class Shopping extends cnt {
 	
 	Scanner input = new Scanner(System.in);
 	HashMap map = new HashMap();
@@ -75,6 +83,7 @@ public class Shopping {
 				break;
 			case 2 :
 				pay();
+				cnt();
 				break;
 			case 3 :
 				check();
