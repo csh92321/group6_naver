@@ -1,53 +1,59 @@
 package naver_mail_jch;
 
-import java.awt.Desktop;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
+
 import java.util.Scanner;
 
 public class Mail {
 	
-	Scanner sc=new Scanner(System.in);
+	//로그인
+	//받는 사람 이메일 작성
+	//메일 제목 작성
+	//메일 내용 작성
+	//메일 보내기
+
+	Scanner scanner=new Scanner(System.in);
 	
-	class MailWrite {
-	    static String[] mail = { "메일" }; //메일이라 입력하면 네이버메일로 이동
-	    static String[] site = { "https://mail.naver.com/" };
-	    Scanner sc;
+	String id, pw;
 	
-	
-	    void mail(String word) {
-	        for (int i=0; i<mail.length; i++) {
-	            if (mail[i].equals(word)) {
-	                return;
-	            }
-	        }
-	    }
-	    
-	    void program() {	
-	        System.out.println("네이버 메일");
-	        
-	        while(true) {
-	            System.out.print("'메일'을 입력하세요: ");
-	            String mail = sc.next();
-	            
-	            if (mail.equals("메일 쓰기")) {
-	                System.out.println("https://mail.naver.com/#%7B%22fClass%22%3A%22write%22%2C%22oParameter%22%3A%7B%22orderType%22%3A%22new%22%2C%22sMailList%22%3A%22%22%7D%7D");
-	                break;
-	            
-	            }
-	        }//while
-	    }//run()
-	}//classs
-
-
-	public class Quiz01 {
-
-		public static void main(String[] args) {
-
-			  Mail mail = new Mail();
-		        
-
+	//로그인
+	public void login(String id, String pw) {
+		
+		if (this.id != null && this.pw != null) {
+			if (this.id.equals(id) && this.pw.equals(pw)) {
+				System.out.println("로그인 하셨습니다.");
+				
+			} else {
+				System.out.println("ID 혹은 패스워드를 다시 확인하세요.");
+			}
 		}
 	}
+	
+	public void email() {
+		
+		
+		//받는 사람 이메일 작성
+		System.out.println("받는 사람 이메일 :");
+		String email = scanner.nextLine();
+		
 	}
+	
+	public void write() {
+		//메일 제목 작성
+		System.out.println("제목 입력 : ");
+		String title = scanner.nextLine();
+		
+		//메일 내용 작성
+		System.out.println("내용 입력 : ");
+		String content = scanner.nextLine();
+		System.out.println(content);
+		System.out.println("입력 완료");
+	}
+	
+	public void send() {
+		
+		System.out.println("메일을 보냈습니다.");
+		System.out.println("-------------");
+
+	}
+}
+//

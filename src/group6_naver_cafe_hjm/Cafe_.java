@@ -13,7 +13,7 @@ public class Cafe_ {
 	public void idcheck(String id) {
 
 		if (flag2 == true) {
-			if (this.id.equals(id)) {
+			if (getId().equals(id)) {
 				System.out.println("중복 아이디");
 			} else {
 				System.out.println("사용 가능 아이디");
@@ -23,7 +23,7 @@ public class Cafe_ {
 
 	public void login(String id, String pw) {
 		if (this.id != null && this.pw != null) {
-			if (this.id.contains(id) && this.pw.contains(pw)) {
+			if (this.id.equals(id) && this.pw.equals(pw)) {
 				System.out.println("로그인 성공! ");
 				flag = true;
 			} else {
@@ -63,7 +63,7 @@ public class Cafe_ {
 		if (flag == true) {
 
 			for (int i = 0; i < arr.size(); i++) {
-				System.out.println(this.id + "님의 글: " + arr.get(i));
+				System.out.println(getId() + "님의 글: " + arr.get(i));
 			}
 		} else {
 			System.out.println("잘못된 접근 입니다");
@@ -77,7 +77,7 @@ public class Cafe_ {
 			System.out.println("==== Naver Cafe ====");
 			System.out.println("0.아이디 중복 체크 1.로그인 2.회원가입");
 			System.out.println("3.글 등록 4.글 조회 5. 메뉴로 돌아가기");
-			
+
 			System.out.print(">>>");
 			int choice = scan.nextInt();
 			switch (choice) {
@@ -88,7 +88,7 @@ public class Cafe_ {
 				idcheck(id03);
 				break;
 			case 1:
-
+				cls();
 				System.out.println("==== 로그인 ====");
 				System.out.print("id 입력 :");
 				String id = scan.next();
@@ -98,6 +98,7 @@ public class Cafe_ {
 				break;
 
 			case 2:
+				cls();
 				System.out.println("==== 회원가입 ====");
 				System.out.print("id 입력 :");
 				String id02 = scan.next();
@@ -108,6 +109,7 @@ public class Cafe_ {
 				signup(id02, pw02);
 				break;
 			case 3:
+				cls();
 				System.out.println("==== 글 등록 ====");
 
 				register();
@@ -121,6 +123,12 @@ public class Cafe_ {
 				return;
 			}
 
+		}
+	}
+	public void cls ()
+	{
+		for(int i =0; i<15; i++) {
+			System.out.println();
 		}
 	}
 
